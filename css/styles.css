@@ -1,0 +1,147 @@
+.cusbody1{
+    background-image: url(../images/onepiecebackground.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+    margin: 0;
+	height: 100vh;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+}
+
+.cusbody2{
+    background-image: url(../images/onepiecebackground.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #f39c12, #b6231c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin: 0;
+}
+
+.navbar {
+    display: flex; 
+    list-style-type: none; 
+    background-color: rgb(150, 18, 18); 
+    padding: 10px;
+    margin: 0; 
+	border-radius: 10px 10px 10px 10px;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white; 
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: rgb(108, 19, 19);
+}
+
+.row{
+    display: flex;
+    flex-flow: wrap;
+    margin: 40px auto;
+}
+
+[class*="col-"]{
+    margin-left: .5%;
+    margin-right: .5%;
+    min-height: 100px;
+    text-align: center;
+}
+
+.container {
+	margin: 5px;
+	background-color: #e0f7fa;
+	border-radius: 10px;
+	border: 3px solid #e0f7fa
+}
+
+.col-3{
+    width: 24%;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.col-12{
+    width: 99%;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
+
+.col-6{
+    width: 48%;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+	border: 3px solid rgb(108, 19, 19)
+}
+
+span{
+    font-style: italic;
+    font-size: 20px;
+}
+
+.name{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 35px;
+    background-color: #000000;
+    color: white;
+    padding: 2px;
+    border-radius: 10px;
+    border: 2px solid rgb(150, 18, 18);
+}
+
+.title{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    background-color: #000000;
+    color: rgb(150, 18, 18);
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid rgb(150, 18, 18);
+    text-align: center;
+}
+
+.cusimg{
+	border-radius: 10%;
+    margin-top: 15px;
+    border: 2px solid rgb(150, 18, 18);
+}
+
+@keyframes fadeIn{
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 800px) {
+    .col-3 {
+        flex: 1 1 48%;
+    }
+
+    .col-3{
+        width: 24%;
+        opacity: 0;
+        animation: fadeIn 1s ease-in forwards;
+        margin-bottom: 50px;
+    }
+}
